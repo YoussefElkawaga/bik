@@ -1,0 +1,13 @@
+nano kiosk.desktop
+
+[Desktop Entry]
+Type=Application
+Name=Kiosk Mode
+Exec=sh -c "unclutter -idle 0.1 -root && chromium-browser --noerrdialogs --kiosk https://my-app-ebike-v3-hhj6.vercel.app"
+Icon=web-browser
+Terminal=false
+X-GNOME-Autostart-enabled=true
+
+
+chmod +x kiosk.desktop
+
